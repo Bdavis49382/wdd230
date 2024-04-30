@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-background: #403D58;
+    --primary-text: #EEE5E9;
+    --secondary-background: #CF5C36;
+    --secondary-text: #A5E6BA;
+    --background-color: #EEE5E9;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    direction: ltr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 150px;
+    margin: 20px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    display: grid;;
+    grid-template-columns: 1fr;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-primary {
+    background-color: var(--primary-background);
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+.text-primary {
+    color: var(--primary-text);
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    background-color: black;
+    color: var(--primary-text);
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card {
+    border: var(--primary-background) 2px solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    background-color: var(--secondary-background);
+    color: var(--primary-text);
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
