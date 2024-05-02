@@ -1,0 +1,15 @@
+@media screen and (min-width: 800px)  {
+    .lg-hstack {
+        display: flex;
+        direction: ltr;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .lg-card-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5%;
+    }
+}

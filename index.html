@@ -6,23 +6,32 @@
     <meta
       name="description"
       content="Ben Davis WDD 230 - Web Frontend Development course assignment portal"
-    >
+      >
     <meta name="author" content="Ben Davis">
+
+    <meta property="og:title" content="Ben Davis - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bdavis49382.github.io/wdd230/images/profile-pic.jpg" />
+    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
     <link rel="icon" href="favicon.ico">
     <script src="scripts/getdates.js" defer></script>
+
     <title>Ben Davis - WDD 230 - Web Frontend Development</title>
   </head>
   <body>
     <div id="content">
-
       <header class="bg-primary">
         <img src="./images/profile-pic.jpg" alt="headshot">
         <h1 class="text-center text-primary">Ben Davis</h1>
         <div></div>
       </header>
       <nav>
-        <ul class="text-center bg-dark text-primary">
+        <ul class="text-center bg-dark text-primary lg-hstack">
           <li>
             <a href="#" class="nav-link">Home</a>
           </li>
@@ -48,16 +57,18 @@
       <main>
         <h2 class="text-center">WDD 230: Web Frontend Development</h2>
         <hr>
-        <section class="card">
-          <h3 class="card-header">Learning Activities</h3>
-          <ul>
-            <li>01: <a href="#">Example</a></li>
-            <li>02: <a href="#">Example</a></li>
-          </ul>
-        </section>
-        <section class="card">
-          <h3 class="card-header">Information</h3>
-          <p class="text-center">Will have information about the weather and page visits</p>
+        <section class="lg-card-grid">
+          <section class="card">
+            <h3 class="card-header">Learning Activities</h3>
+            <ul>
+              <li>01: <a href="#">Example</a></li>
+              <li>02: <a href="#">Example</a></li>
+            </ul>
+          </section>
+          <section class="card">
+            <h3 class="card-header">Information</h3>
+            <p class="text-center">Will have information about the weather and page visits</p>
+          </section>
         </section>
       </main>
       <footer class="text-center bg-primary text-primary">

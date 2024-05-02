@@ -65,8 +65,8 @@ ul {
     background-color: black;
     color: var(--primary-text);
     display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .card {
@@ -75,8 +75,13 @@ ul {
     margin-bottom: 10px;
 }
 
+.card ul {
+    padding: 5px;
+}
+
 .card-header {
     background-color: var(--secondary-background);
+    text-align: center;
     color: var(--primary-text);
     margin-top: 0;
     padding-top: 5px;
