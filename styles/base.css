@@ -2,7 +2,7 @@
 :root {
     --primary-background: #403D58;
     --primary-text: #EEE5E9;
-    --secondary-background: #CF5C36;
+    --secondary-background: #a3401f;
     --secondary-text: #A5E6BA;
     --background-color: #EEE5E9;
 }
@@ -114,4 +114,10 @@ nav ul .active {
 
 #menu-button.open::before {
     content: "X";
+}
+
+#google-maps {
+    border: none;
+    height: 450px;
+    width: 100%;
 }
