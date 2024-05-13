@@ -121,3 +121,7 @@ nav ul .active {
     height: 450px;
     width: 100%;
 }
+
+#last-modified {
+    margin-bottom: 0;
+}

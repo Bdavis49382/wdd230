@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --light: white;
+    --dark: rgba(20,20,20,.8);
+    --accent: purple;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title-font {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+}
+
+.bg-dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.bg-light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+    color: var(--light);
+}
+
+.text-accent {
+    background-color: var(--light);
+    color: var(--accent);
+}
+
+li {
+    list-style-type: none;
+}

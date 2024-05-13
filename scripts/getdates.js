@@ -5,7 +5,7 @@ function updateYear() {
 
 function updateLastModified() {
     const lastModified = document.lastModified;
-    document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
+    document.getElementById("last-modified").textContent = `Last Modified: ${lastModified}`;
 }
 
 
