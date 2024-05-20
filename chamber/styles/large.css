@@ -1,0 +1,24 @@
+@media screen and (min-width: 800px)  {
+    :root {
+        --light: white;
+        --dark: rgba(20,20,20,.8);
+        --accent: purple;
+    }
+
+    .lg-hstack {
+        display: flex;
+        direction: ltr;
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+}
