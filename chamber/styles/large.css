@@ -21,4 +21,10 @@
         display: block;
     }
 
+    #hero-section button {
+        position: absolute;
+        left: 50px;
+        top: 150px;
+    }
+
 }

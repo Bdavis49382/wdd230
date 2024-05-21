@@ -121,3 +121,12 @@ img {
     align-items: center;
     justify-content: space-evenly;
 }
+
+p {
+    margin-left: .5rem;
+}
+
+#hero-section {
+    position: relative;
+}
+
