@@ -1,0 +1,11 @@
+@media screen and (min-width: 600px)  {
+    #small-cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .logo {
+        width: 10rem;
+    }
+}

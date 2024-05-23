@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px)  {
+@media screen and (min-width: 1000px)  {
     :root {
         --light: white;
         --dark: rgba(20,20,20,.8);
@@ -23,8 +23,13 @@
 
     #hero-section button {
         position: absolute;
-        left: 50px;
-        top: 150px;
+        left: 20%;
+        top: 20%;
     }
+
+    #hero-section img {
+        max-width: 900px;
+    }
+
 
 }

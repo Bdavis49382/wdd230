@@ -19,9 +19,13 @@
     <script src="./scripts/header-footer.js" defer></script>
     <title>Urithiru Chamber of Commerce</title>
 </head>
-<body>
+<body id="body">
     <header class="bg-dark">
-        <h1>Urithiru Chamber of Commerce</h1>
+        <div class="hstack ">
+            <img src="./images/logo.png" alt="logo" class="logo">
+            <h1>Urithiru Chamber of Commerce</h1>
+        </div>
+        <button id="dark-mode-button">Dark Mode</button>
         <hr>
         <button class="menu-button" aria-label="menu button"></button>
         <nav class="hamburger-menu">
@@ -43,33 +47,51 @@
     </header>
     <main>
         <section id="hero-section">
-            <img alt="hero image" src="https://picsum.photos/800/300">
+            <img alt="hero image" src="./images/city-hero-min.jpg">
             <button>Join Chamber</button>
         </section>
-        <section>
-            <h2>Current Events</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus adipisci expedita quia sit iusto quo dicta magnam unde velit, omnis blanditiis perspiciatis dolore soluta incidunt consectetur optio quaerat beatae minus! Beatae ipsam molestiae ut quia rerum qui, dolor alias illo explicabo ducimus adipisci, dolores odit hic unde. Tempore, reprehenderit voluptatibus?</p>
-        </section>
-        <section>
-            <h2>Weather</h2>
-            <p>The weather is great</p>
-            <p>It's warm. 50&deg;</p>
-            <p>And Sunny</p>
-        </section>
+        <div id="small-cards">
+            <section>
+                <h2>Current Events</h2>
+                <h3>New Papa John's Location Opening!</h3>
+                <p>The much awaited day has nearly arrived! Come visit when the famous pizza chain comes to town and maybe get some free pizza!
+                    <a href="#">more info...</a>
+                </p>
+            </section>
+            <section>
+                <h2>Weather</h2>
+                <div class="centered">
+                    <h3>🌤️</h3>
+                    <p>50&deg;F</p>
+                    <p>Partly Cloudy</p>
+                    <p>Humidity: 35%</p>
+                    <p>Wind Chill: 10&deg;</p>
+                </div>
+            </section>
+        </div>
         <section>
             <h2>Advertisements</h2>
             <div class="lg-hstack">
                 <section class="spotlight">
-                    <h3>Company 1</h3>
-                    <p>Company 1 is the best. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia officiis at distinctio nulla! Sed ratione animi rem aperiam harum nemo libero, nostrum consequuntur laborum aliquid sapiente a consectetur blanditiis est quod, aut facere velit veritatis odit dolore! Exercitationem illum obcaecati perspiciatis labore, harum in quisquam debitis maxime consequatur? Ad!</p>
+                    <h3>Thankful Transport</h3>
+                    <p>"We get it there for you!"</p>
+                    <p>hello@thankfultransport.com</p>
+                    <p>555-555-5555</p>
+                    <a href="#">Website</a>
                 </section>
                 <section class="spotlight">
-                    <h3>Company 2</h3>
-                    <p>Company 2 is the best. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iste architecto delectus cumque totam voluptate ab, ea illum sapiente molestiae, expedita veniam, officiis doloremque? Tenetur, perspiciatis mollitia. Eveniet dolore harum magni commodi. Quam officia molestiae fugiat beatae, quidem libero ducimus, nesciunt quibusdam officiis, repellendus minus architecto voluptatibus necessitatibus nam amet!</p>
+                    <h3>Code Primera</h3>
+                    <p>After School Coding!</p>
+                    <p>contact@codeprimera.com</p>
+                    <p>555-555-5555</p>
+                    <a href="#">Website</a>
                 </section>
                 <section class="spotlight">
-                    <h3>Company 3</h3>
-                    <p>Company 3 is the best. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error iste necessitatibus accusantium ea optio illo, quasi similique praesentium laborum alias, et perferendis in laudantium unde animi odio repudiandae adipisci natus rerum. Debitis corporis nihil culpa dolorem perspiciatis nisi et suscipit neque excepturi atque non, accusamus cum odio labore alias doloribus?</p>
+                    <h3>Build a Treefort</h3>
+                    <p>Over 1000 Plans</p>
+                    <p>builda@treefort.com</p>
+                    <p>555-555-5555</p>
+                    <a href="#">Website</a>
                 </section>
             </div>
 

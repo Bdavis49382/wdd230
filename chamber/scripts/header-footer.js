@@ -15,5 +15,15 @@ button.addEventListener('click', () => {
     nav.classList.toggle("open")
 })
 
+const darkModeButton = document.getElementById("dark-mode-button");
+darkModeButton.addEventListener('click', () => {
+    document.getElementById('body').classList.toggle('bg-dark');
+    darkModeButton.textContent = darkModeButton.textContent == 'Dark Mode' ? 'Light Mode' : 'Dark Mode'
+
+    // If needed later, it can also manually change all the variables
+    // document.documentElement.style.setProperty('--light','black')
+    // document.documentElement.style.setProperty('--dark','white')
+})
+
 updateYear();
 updateLastModified();
