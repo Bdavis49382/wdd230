@@ -137,3 +137,22 @@ nav ul .active {
 #last-modified {
     margin-bottom: 0;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-area {
+    position: relative;
+}
+
+.pic-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline;
+    padding: 5px;
+    border: rgba(0,0,0,.2) solid 1px;
+}
