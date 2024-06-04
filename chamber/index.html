@@ -22,7 +22,7 @@
 <body id="body">
     <header class="bg-dark">
         <div class="hstack ">
-            <img src="./images/logo.png" alt="logo" class="logo">
+            <img src="./images/logo.webp" alt="logo" class="logo">
             <h1>Urithiru Chamber of Commerce</h1>
         </div>
         <button id="dark-mode-button">Dark Mode</button>
@@ -47,7 +47,11 @@
     </header>
     <main>
         <section id="hero-section">
-            <img alt="hero image" src="./images/city-hero-min.jpg">
+            <picture>
+                <source media="(min-width:1000px)" srcset="./images/city-hero-large.webp"/>
+                <source media="(min-width:600px)" srcset="./images/city-hero-medium.webp"/>
+                <img alt="hero image" src="./images/city-hero-small.webp">
+            </picture>
             <button>Join Chamber</button>
         </section>
         <div id="small-cards">
@@ -99,7 +103,7 @@
     </main>
     <footer>
         <div class="hstack">
-            <img src="./images/logo.png" alt="Logo">
+            <img src="./images/logo.webp" alt="Logo">
             <div>
                 <p>Urithiru Chamber of Commerce</p>
                 <p>Fake Address</p>
