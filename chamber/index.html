@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/header-footer.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
     <title>Urithiru Chamber of Commerce</title>
 </head>
 <body id="body">
@@ -66,10 +67,10 @@
                 <h2>Weather</h2>
                 <div class="centered">
                     <h3>🌤️</h3>
-                    <p>50&deg;F</p>
+                    <p><span id="degrees">50</span>&deg;F</p>
                     <p>Partly Cloudy</p>
-                    <p>Humidity: 35%</p>
-                    <p>Wind Chill: 10&deg;</p>
+                    <p>Wind Speed: <span id="wind-speed">20</span> mph</p>
+                    <p>Wind Chill: <span id="wind-chill">10</span>&deg;</p>
                 </div>
             </section>
         </div>
