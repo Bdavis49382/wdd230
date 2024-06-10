@@ -8,4 +8,17 @@
     .logo {
         width: 10rem;
     }
+
+    #discover-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #place-images img {
+        transition: opacity .5s;
+    }
+
+    #place-images img:hover {
+        opacity: .5;
+    }
 }

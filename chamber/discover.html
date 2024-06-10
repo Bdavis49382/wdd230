@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ben Davis">
+    <meta name="description" content="Spring 2024 - WDD 230 - Chamber Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Urithiru Chamber of Commerce - Discover" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bdavis49382.github.io/wdd230/images/profile-pic.jpg" />
+    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/chamber/discover.html" />
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/header-footer.js" defer></script>
+    <script src="./scripts/discover.js" defer></script>
+    <title>Urithiru Chamber of Commerce</title>
+</head>
+<body id="body">
+    <header class="bg-dark">
+        <div class="hstack ">
+            <img src="./images/logo.webp" alt="logo" class="logo">
+            <h1>Urithiru Chamber of Commerce</h1>
+        </div>
+        <button id="dark-mode-button">Dark Mode</button>
+        <hr>
+        <button class="menu-button" aria-label="menu button"></button>
+        <nav class="hamburger-menu">
+            <ul class="lg-hstack">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Discover</a>
+                </li>
+                <li>
+                    <a href="#">Directory</a>
+                </li>
+                <li>
+                    <a href="#">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="discover-main">
+        <section id="sidebar">
+            <section>
+                <h2>Demographics</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolores porro deserunt culpa, numquam temporibus nobis excepturi officiis, laborum non, distinctio maiores mollitia! Cupiditate, iusto sapiente ducimus quos voluptas amet!</p>
+            </section>
+            <section>
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolores porro deserunt culpa, numquam temporibus nobis excepturi officiis, laborum non, distinctio maiores mollitia! Cupiditate, iusto sapiente ducimus quos voluptas amet!</p>
+            </section>
+            <section>
+                <h2>Last Visited</h2>
+                <p id="last-visited-message"></p>
+            </section>
+        </section>
+        <section id="place-images">
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="./images/eatery-large.webp" height="500"/>
+                    <source media="(min-width:600px)" srcset="./images/eatery-medium.webp" height="400"/>
+                    <img src="images/eatery-small.webp" alt="eatery" height="200" loading="lazy">
+                </picture>
+                <figcaption>The lively local eatery.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="./images/bar-large.webp" height="500"/>
+                    <source media="(min-width:600px)" srcset="./images/bar-medium.webp" height="400"/>
+                    <img src="images/bar-small.webp" alt="eatery" height="200" loading="lazy">
+                </picture>
+                <figcaption>The popular local pub!</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="./images/central-tower-large.webp" height="500"/>
+                    <source media="(min-width:600px)" srcset="./images/central-tower-medium.webp" height="400"/>
+                    <img src="images/central-tower-small.webp" alt="eatery" height="200" loading="lazy">
+                </picture>
+                <figcaption>A view of the majestic central city tower.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="./images/view-large.webp" height="500"/>
+                    <source media="(min-width:600px)" srcset="./images/view-medium.webp" height="400"/>
+                    <img src="images/view-small.webp" alt="eatery" height="200" loading="lazy">
+                </picture>
+                <figcaption>The view looking out from the city.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="./images/throne-room-large.webp" height="500"/>
+                    <source media="(min-width:600px)" srcset="./images/throne-room-medium.webp" height="400"/>
+                    <img src="images/throne-room-small.webp" alt="eatery" height="200" loading="lazy">
+                </picture>
+                <figcaption>The throne room in the palace.</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="./images/dueling-arena-large.webp" height="500"/>
+                    <source media="(min-width:600px)" srcset="./images/dueling-arena-medium.webp" height="400"/>
+                    <img src="images/dueling-arena-small.webp" alt="eatery" height="200" loading="lazy">
+                </picture>
+                <figcaption>The dueling arena where nobles test their mettle!</figcaption>
+            </figure>
+    </main>
+    <footer>
+        <div class="hstack">
+            <img src="./images/logo.webp" alt="Logo">
+            <div>
+                <p>Urithiru Chamber of Commerce</p>
+                <p>Fake Address</p>
+                <p>info@urithiruchamber.org</p>
+                <p>555-555-5555</p>
+            </div>
+        </div>
+        <hr>
+        <p>
+            &copy;<span id="currentYear"></span> Urithiru Chamber
+        </p>
+        <p>Ben Davis</p>
+        <p>WDD 230 Project</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

@@ -5,7 +5,6 @@ const list = document.getElementById('list');
 
 button.addEventListener('click',() => {
 
-    // If there is an input and it isn't already in the list, add it.
     if (input.value == "") {
         input.focus();
     }
