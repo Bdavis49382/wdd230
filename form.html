@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
-      content="Ben Davis WDD 230 - Web Frontend Development course assignment portal"
+      content="Ben Davis WDD 230 - form example"
       >
     <meta name="author" content="Ben Davis">
 
     <meta property="og:title" content="Ben Davis - WDD 230 - Web Frontend Development" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://bdavis49382.github.io/wdd230/images/profile-pic.jpg" />
-    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/" />
+    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/form.html" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/visits.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 
     <title>Ben Davis - WDD 230 - Web Frontend Development</title>
   </head>
@@ -58,42 +59,29 @@
         </ul>
       </nav>
       <main>
-        <h2 class="text-center">WDD 230: Web Frontend Development</h2>
-        <div class="hero-area">
-          <picture>
-            <source media="(min-width:800px)" srcset="./images/temple_pic_medium.webp"/>
-            <img src="./images/temple_pic_small.webp" alt="Fort Collins Temple"/>
-          </picture>
-          <p class="pic-label">Fort Collins Temple</p>
-        </div>
-        <hr>
-        <section class="lg-card-grid">
-          <section class="card">
-            <h3 class="card-header">Learning Activities</h3>
-            <ul>
-              <li>01: <a href="#">Example</a></li>
-              <li>02: <a href="lesson02/design-principles.html">Design Principles</a></li>
-              <li>03: <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a></li>
-              <li>04: <a href="chamber/index.html">Chamber Site</a></li>
-              <li>05: <a href="lesson05/bom.html">BoM Excercise</a></li>
-              <li>06:</li>
-              <li>07:</li>
-              <li>08: <a href="lesson08/tablebuild.html">Table Example</a> <a href="./form.html">Form Example</a></li>
-            </ul>
-          </section>
-          <section class="card">
-            <h3 class="card-header">Information</h3>
-            <p class="text-center">Will have information about the weather</p>
-            <p>Page Visits: <span id="visits"></span></p>
-          </section>
-        </section>
-        <section>
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3423.631720036384!2d-111.78235096771763!3d43.81602623344114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715289444567!5m2!1sen!2sus" 
-            id="google-maps"
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        <form action="record.html" method="get">
+            <label>
+                Username: <sup class="red">*</sup>
+                <input type="text" id="username" name="username" required>
+            </label>
+            <label>
+                Password: <sup class="red">*</sup> (at least 8 alpha-numeric characters)
+                <input type="password" id="password" name="password" required pattern="[\w\d]{8,}">
+            </label>
+            <label>
+                Confirm Password: <sup class="red">*</sup> <span id="message"></span>
+                <input type="password" id="password-confirmation" name="password-confirmation" required>
+            </label>
+            <label>
+                Email: <sup class="red">*</sup>
+                <input type="email" id="email" name="email" required pattern=".+@byui\.edu$">
+            </label>
+            <label>
+                Page Rating:
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+            </label>
+            <button type="submit">Sign Up</button>
+        </form>
       </main>
       <footer class="text-center bg-primary text-primary">
         <p>
