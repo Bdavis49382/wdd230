@@ -17,3 +17,19 @@ button {
     padding: .3rem;
     border-radius: 5px;
 }
+
+.red {
+    color: red;
+}
+
+input:valid {
+    background-color: lightgreen;
+}
+
+input:invalid {
+    background-color: palevioletred;
+}
+
+input:placeholder-shown {
+    background-color: white;
+}
