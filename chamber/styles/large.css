@@ -31,5 +31,10 @@
         max-width: 900px;
     }
 
+    #join-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 
 }

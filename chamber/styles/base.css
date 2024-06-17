@@ -158,3 +158,33 @@ p {
 .logo {
     width: 5rem;
 }
+
+/* Join Page */
+
+label {
+    display: block;
+    margin: 1rem;
+}
+input {
+    display: block;
+}
+
+textarea {
+    display: block;
+}
+
+input:valid {
+    background-color: lightgreen;
+}
+
+input:invalid {
+    background-color: palevioletred;
+}
+
+.red {
+    color: red;
+}
+
+h3 {
+    padding-left: .2rem;
+}

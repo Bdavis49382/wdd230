@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ben Davis">
+    <meta name="description" content="Spring 2024 - WDD 230 - Chamber Join Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Urithiru Chamber of Commerce Join Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bdavis49382.github.io/wdd230/images/profile-pic.jpg" />
+    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/chamber/join.html" />
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/header-footer.js" defer></script>
+    <title>Join Urithiru Chamber</title>
+</head>
+<body id="body">
+    <header class="bg-dark">
+        <div class="hstack ">
+            <img src="./images/logo.webp" alt="logo" class="logo">
+            <h1>Urithiru Chamber of Commerce</h1>
+        </div>
+        <button id="dark-mode-button">Dark Mode</button>
+        <hr>
+        <button class="menu-button" aria-label="menu button"></button>
+        <nav class="hamburger-menu">
+            <ul class="lg-hstack">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="./discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="#">Directory</a>
+                </li>
+                <li>
+                    <a href="#">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="join-page">
+        <section>
+            <form action="thankyou.html" method="get">
+                <label>
+                    First Name: <sup class="red">*</sup>
+                    <input type="text" id="firstname" name="firstname" required autofocus>
+                </label>
+                <label>
+                    Last Name: <sup class="red">*</sup>
+                    <input type="text" id="lastname" name="lastname" required>
+                </label>
+                <label>
+                    Title/Position Within Organization: <sup class="red">*</sup> (at least 8 alpha-numeric characters)
+                    <input type="text" id="title" name="title" required pattern="[a-zA-Z0-9 \-]{7,}">
+                </label>
+                <label>
+                    Email: <sup class="red">*</sup>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </label>
+                <label>
+                    Phone Number: <sup class="red">*</sup>
+                    <input type="tel" name="phonenumber" id="phonenumber" required>
+                </label>
+                <label>
+                    Business/Organization Name: <sup class="red">*</sup>
+                    <input type="text" name="businessName" id="businessName" required>
+                </label>
+                <label>
+                    Membership Level:
+                    <label>
+                        NP Membership 
+                        <input type="radio" id="NP" name="level" value="NP" checked>
+                    </label>
+                    <label>
+                        Bronze Membership
+                        <input type="radio" id="Bronze" name="level" value="Bronze">
+                    </label>
+                    <label>
+                        Silver Membership
+                        <input type="radio" id="Silver" name="level" value="Silver">
+                    </label>
+                    <label>
+                        Gold Membership
+                        <input type="radio" id="Gold" name="level" value="Gold">
+                    </label>
+                </label>
+                <label>
+                    Business/Organization Description:
+                    <textarea name="description" id="description" rows="4" cols="40"></textarea>
+                </label>
+                <input type="hidden" name="date" id="date">
+                <button type="submit">Join</button>
+            </form>
+        </section>
+        <section>
+            <h2>Membership Options</h2>
+            <section>
+                <h3>NP Membership(Free)</h3>
+                <ul>
+                    <li><b>Listing in Chamber Directory:</b> Get your organization's name and contact details listed in our official chamber directory.</li>
+                    <li><b>Access to Networking Events:</b> Attend networking sessions, workshops, and seminars to connect with other local businesses.</li>
+                    <li><b>Monthly Newsletter:</b> Stay informed about community news, events, and opportunities.</li>
+                    <li><b>Community Support:</b> Be part of a network that supports local causes and initiatives.</li>
+                </ul>
+                <p><b>Fee: $0</b></p>
+            </section>
+            <section>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li><b>All Non-Profit Benefits:</b> Enjoy the benefits of the Non-Profit membership.</li>
+                    <li><b>Enhanced Directory Listing:</b> Highlight your business with a logo and brief description.</li>
+                    <li><b>Exclusive Workshops:</b> Participate in specialized workshops tailored for Bronze members.</li>
+                    <li><b>Discounted Event Tickets:</b> Access chamber events at discounted rates.</li>
+                    <li><b>Social Media Shout-Outs:</b> Get featured on our social media platforms.</li>
+                </ul>
+                <p><b>Fee: $50 per year</b></p>
+            </section>
+            <section>
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li><b>All Bronze Benefits:</b> Access all the perks of the Bronze membership.</li>
+                    <li><b>Business Spotlight:</b> Be featured in our monthly newsletter or website.</li>
+                    <li><b>Priority Referrals:</b> Receive priority referrals from the chamber.</li>
+                    <li><b>Business Advocacy:</b> Participate in advocacy efforts for local businesses.</li>
+                    <li><b>Chamber Logo Usage:</b> Display the chamber logo on your website and marketing materials.</li>
+                </ul>
+                <p><b>Fee: $150 per year</b></p>
+            </section>
+            <section>
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li><b>All Silver Benefits:</b> Enjoy all the advantages of the Silver membership.</li>
+                    <li><b>VIP Networking:</b> Attend exclusive VIP networking events.</li>
+                    <li><b>Leadership Opportunities:</b> Serve on chamber committees or task forces.</li>
+                    <li><b>Prominent Directory Placement:</b> Top placement in the chamber directory.</li>
+                    <li><b>Sponsorship Opportunities:</b> Sponsor chamber events and gain visibility.</li>
+                </ul>
+                <p><b>Fee: $300 per year</b></p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="hstack">
+            <img src="./images/logo.webp" alt="Logo">
+            <div>
+                <p>Urithiru Chamber of Commerce</p>
+                <p>Fake Address</p>
+                <p>info@urithiruchamber.org</p>
+                <p>555-555-5555</p>
+            </div>
+        </div>
+        <hr>
+        <p>
+            &copy;<span id="currentYear"></span> Urithiru Chamber
+        </p>
+        <p>Ben Davis</p>
+        <p>WDD 230 Project</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
