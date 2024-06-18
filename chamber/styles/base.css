@@ -104,7 +104,13 @@ h2 {
 
 button {
     background-color: var(--accent);
-    color: var(--light)
+    color: var(--light);
+}
+
+button  a{
+    background-color: var(--accent);
+    color: var(--light);
+    text-decoration: none;
 }
 
 footer {
@@ -158,6 +164,7 @@ p {
 .logo {
     width: 5rem;
 }
+
 
 /* Join Page */
 
