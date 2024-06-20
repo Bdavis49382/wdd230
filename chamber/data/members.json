@@ -4,7 +4,7 @@
             "address": "123 Main Street, Suite 101, Cityville, USA",
             "phone": "+1 (555) 123-4567",
             "website": "https://www.techinnovators.com",
-            "image": "tech_innovators_logo.png",
+            "image": "https://placehold.co/400",
             "membership_level": "Gold",
             "description": "Cutting-edge technology solutions for businesses.",
             "founded_year": 2005
@@ -14,7 +14,7 @@
             "address": "456 Greenway Avenue, Eco City, USA",
             "phone": "+1 (555) 987-6543",
             "website": "https://www.greenearthfarms.org",
-            "image": "green_earth_logo.png",
+            "image": "https://placehold.co/400",
             "membership_level": "Silver",
             "description": "Organic farming and sustainable agriculture.",
             "founded_year": 2010
@@ -24,7 +24,7 @@
             "address": "789 Serenity Lane, Zen Town, USA",
             "phone": "+1 (555) 246-8101",
             "website": "https://www.sunrisewellnesscenter.com",
-            "image": "sunrise_wellness_icon.png",
+            "image": "https://placehold.co/400",
             "membership_level": "Bronze",
             "description": "Holistic health services and mindfulness programs.",
             "founded_year": 2008
@@ -34,7 +34,7 @@
             "address": "987 Culinary Court, Flavorville, USA",
             "phone": "+1 (555) 543-2109",
             "website": "https://www.gourmetdelights.net",
-            "image": "gourmet_delights_logo.png",
+            "image": "https://placehold.co/400",
             "membership_level": "Silver",
             "description": "Artisanal food products and culinary workshops.",
             "founded_year": 2012
@@ -44,7 +44,7 @@
             "address": "321 Harbor View Drive, Wealthburg, USA",
             "phone": "+1 (555) 777-8888",
             "website": "https://www.bluewavefinancial.com",
-            "image": "bluewave_logo.png",
+            "image": "https://placehold.co/400",
             "membership_level": "Gold",
             "description": "Comprehensive financial planning and investment management.",
             "founded_year": 2000
@@ -54,7 +54,7 @@
             "address": "567 Art Avenue, Imagination City, USA",
             "phone": "+1 (555) 333-9999",
             "website": "https://www.creativemindsstudio.design",
-            "image": "creative_minds_icon.png",
+            "image": "https://placehold.co/400",
             "membership_level": "Bronze",
             "description": "Graphic design, branding, and visual storytelling.",
             "founded_year": 2015
@@ -64,7 +64,7 @@
             "address": "789 Explorer Road, Wanderlust Town, USA",
             "phone": "+1 (555) 678-4321",
             "website": "https://www.adventureseekers.com",
-            "image": "adventure_seekers_logo.png",
+            "image": "https://placehold.co/400",
             "membership_level": "Non-Profit",
             "description": "Promoting global exploration and cultural exchange.",
             "founded_year": 2003

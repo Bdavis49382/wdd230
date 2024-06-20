@@ -195,3 +195,15 @@ input:invalid {
 h3 {
     padding-left: .2rem;
 }
+
+/* Directory Page */
+
+#members.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card {
+    text-align: center;
+    padding: .5rem;
+}
