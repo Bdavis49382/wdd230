@@ -22,6 +22,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/visits.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" type="module" defer></script>
 
     <title>Ben Davis - WDD 230 - Web Frontend Development</title>
   </head>
@@ -80,11 +81,15 @@
               <li>07:</li>
               <li>08: <a href="lesson08/tablebuild.html">Table Example</a> <a href="./form.html">Form Example</a></li>
               <li>09: <a href="lesson09/prophets.html">Prophets Example</a></li>
+              <li>10: <a href="lesson10/weather.html">Weather Example</a></li>
             </ul>
           </section>
           <section class="card">
             <h3 class="card-header">Information</h3>
-            <p class="text-center">Will have information about the weather</p>
+            <p class="text-center">
+              <img src="" alt="Weather Icon" id="icon">
+              <span id="temp"></span>&deg;F <span id="description"></span>
+            </p>
             <p>Page Visits: <span id="visits"></span></p>
           </section>
         </section>
