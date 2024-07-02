@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/header-footer.js" defer></script>
     <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/weather.js" type="module" defer></script>
+    <script src="./scripts/banner.js" defer></script>
     <title>Urithiru Chamber of Commerce</title>
 </head>
 <body id="body">
@@ -47,6 +49,9 @@
         </nav>
     </header>
     <main>
+        <!-- <div id="banner">
+            <p>Urithiru chamber of commerce will be hosting a meet and greet on Wednesday at 7:00 PM. We hope to see you there!</p>
+        </div> -->
         <section id="hero-section">
             <picture>
                 <source media="(min-width:1000px)" srcset="./images/city-hero-large.webp"/>
@@ -66,12 +71,13 @@
             <section>
                 <h2>Weather</h2>
                 <div class="centered">
-                    <h3>🌤️</h3>
-                    <p><span id="degrees">40</span>&deg;F</p>
+                    <img src="" alt="Weather Icon" id="icon">
+                    <span id="temp"></span>&deg;F <span id="description"></span>
                     <p>Partly Cloudy</p>
                     <p>Wind Speed: <span id="wind-speed">20</span> mph</p>
                     <p>Wind Chill: <span id="wind-chill">10</span>&deg;</p>
                 </div>
+                <p>Next Three Days: <span id="forecast"></span></p>
             </section>
         </div>
         <section>

@@ -1,4 +1,4 @@
-const degrees = Number(document.getElementById('degrees').textContent)
+const degrees = Number(document.getElementById('temp').textContent)
 const windSpeed = Number(document.getElementById('wind-speed').textContent)
 const windChill = document.getElementById('wind-chill')
 
