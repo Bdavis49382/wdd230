@@ -107,10 +107,13 @@ button {
     color: var(--light);
 }
 
-button  a{
+#join-link {
     background-color: var(--accent);
     color: var(--light);
     text-decoration: none;
+    padding: .1rem;
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 footer {
@@ -151,7 +154,7 @@ p {
     text-align: center;
 }
 
-#hero-section button {
+#join-link {
     position: absolute;
     left: 10px;
     top: 50px;

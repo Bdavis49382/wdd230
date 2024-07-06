@@ -6,10 +6,10 @@
     <meta name="description" content="Spring 2024 - WDD 230 - Chamber Project">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Urithiru Chamber of Commerce" />
+    <meta property="og:title" content="Urithiru Chamber of Commerce" >
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://bdavis49382.github.io/wdd230/images/profile-pic.jpg" />
-    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/chamber" />
+    <meta property="og:image" content="https://bdavis49382.github.io/wdd230/images/profile-pic.jpg" >
+    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/chamber" >
 
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/header-footer.js" defer></script>
     <script src="./scripts/windchill.js" defer></script>
-    <script src="./scripts/weather.js" type="module" defer></script>
+    <script src="./scripts/weather.js" type="module"></script>
     <script src="./scripts/banner.js" defer></script>
     <script type="module" src="./scripts/spotlights.js"></script>
     <title>Urithiru Chamber of Commerce</title>
@@ -56,7 +56,7 @@
                 <source media="(min-width:600px)" srcset="./images/city-hero-medium.webp"/>
                 <img alt="hero image" src="./images/city-hero-small.webp">
             </picture>
-            <button><a href="./join.html">Join Chamber</a></button>
+            <a href="./join.html" id="join-link">Join Chamber</a>
         </section>
         <div id="small-cards">
             <section>
@@ -69,7 +69,7 @@
             <section>
                 <h2>Weather</h2>
                 <div class="centered">
-                    <img src="" alt="Weather Icon" id="icon">
+                    <img src="#" alt="Weather Icon" id="icon">
                     <span id="temp"></span>&deg;F <span id="description"></span>
                     <p>Partly Cloudy</p>
                     <p>Wind Speed: <span id="wind-speed">20</span> mph</p>
