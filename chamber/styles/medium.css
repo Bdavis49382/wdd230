@@ -14,12 +14,5 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    #place-images img {
-        transition: opacity .5s;
-    }
-
-    #place-images img:hover {
-        opacity: .5;
-    }
 
 }

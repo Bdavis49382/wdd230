@@ -3,12 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/header-footer.js" defer></script>
     <title>Thank You For Joining Us!</title>
 </head>
 <body>
+    <header class="bg-dark">
+        <div class="hstack ">
+            <img src="./images/logo.webp" alt="logo" class="logo">
+            <h1>Urithiru Chamber of Commerce</h1>
+        </div>
+        <button id="dark-mode-button">Dark Mode</button>
+        <hr>
+        <button class="menu-button" aria-label="menu button"></button>
+        <nav class="hamburger-menu">
+            <ul class="lg-hstack">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="./directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="./join.html">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h1>Thank You For Joinging the Urithiru Chamber of Commerce!</h1>
         <a href="./index.html">Return to home page.</a>
     </main>
+    <footer>
+        <div class="hstack">
+            <img src="./images/logo.webp" alt="Logo">
+            <div>
+                <p>Urithiru Chamber of Commerce</p>
+                <p>Fake Address</p>
+                <p>info@urithiruchamber.org</p>
+                <p>555-555-5555</p>
+            </div>
+        </div>
+        <hr>
+        <p>
+            &copy;<span id="currentYear"></span> Urithiru Chamber
+        </p>
+        <p>Ben Davis</p>
+        <p>WDD 230 Project</p>
+        <p id="last-modified"></p>
+    </footer>
 </body>
 </html>

@@ -20,6 +20,7 @@
     <script src="./scripts/windchill.js" defer></script>
     <script src="./scripts/weather.js" type="module" defer></script>
     <script src="./scripts/banner.js" defer></script>
+    <script type="module" src="./scripts/spotlights.js"></script>
     <title>Urithiru Chamber of Commerce</title>
 </head>
 <body id="body">
@@ -49,9 +50,6 @@
         </nav>
     </header>
     <main>
-        <!-- <div id="banner">
-            <p>Urithiru chamber of commerce will be hosting a meet and greet on Wednesday at 7:00 PM. We hope to see you there!</p>
-        </div> -->
         <section id="hero-section">
             <picture>
                 <source media="(min-width:1000px)" srcset="./images/city-hero-large.webp"/>
@@ -82,7 +80,7 @@
         </div>
         <section>
             <h2>Advertisements</h2>
-            <div class="lg-hstack">
+            <div id="spotlights" class="lg-hstack">
                 <section class="spotlight">
                     <h3>Thankful Transport</h3>
                     <p>"We get it there for you!"</p>

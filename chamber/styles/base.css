@@ -208,6 +208,7 @@ input:invalid {
 
 .red {
     color: red;
+    font-size: 1rem;
 }
 
 h3 {
@@ -219,6 +220,31 @@ h3 {
 #members.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+#members.grid img {
+    display: inline;
+}
+
+#members.grid h2 {
+    border-bottom: 1px solid black;
+}
+
+#members .card {
+    display: flex;
+    flex-direction: row;
+}
+
+#members.grid .card {
+    display: block;
+}
+
+#members img{
+    display: none;
+}
+
+#members h2 {
+    border: none;
 }
 
 .card {
