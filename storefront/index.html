@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ben Davis">
+    <meta name="description" content="Spring 2024 - WDD 230 - Final Project">
+
+    <meta property="og:title" content="Just Burgers and Fries | Official Website" >
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bdavis49382.github.io/wdd230/storefront/images/log.webp" >
+    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/storefront" >
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <title>Just Burgers and Fries | Welcome!</title>
+</head>
+<body>
+    <header class="bg-secondary hstack">
+        <img src="./images/logo.webp" alt="logo">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./products.html">Products</a>
+            <a href="./about.html">About Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Just Burgers and Fries</h1>
+            <h4>The World's First Online-Only Drive-Thru!</h4>
+            <picture>
+                <source media="(min-width:1000px)" srcset="./images/hero-large.webp"/>
+                <source media="(min-width:600px)" srcset="./images/hero-medium.webp"/>
+                <img alt="hero image" src="./images/hero-small.webp">
+            </picture>
+            <a href="./products.html">Order Now!</a>
+        </section>
+        <section id="featured" class="bg-primary">
+            <div class="card">
+                <h2>Product 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
+                <img src="#" alt="Product1 Image">
+            </div>
+            <div class="card">
+                <h2>Product 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
+                <img src="#" alt="Product2 Image">
+            </div>
+            <div class="card">
+                <h2>Product 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
+                <img src="#" alt="Product3 Image">
+            </div>
+        </section>
+        <section id="weather" class="bg-secondary">
+            <div class="card">
+                <h2>Today</h2>
+                <p>Temp</p>
+                <p>Conditions</p>
+                <img src="#" alt="conditions icon">
+                <p>Humidity</p>
+            </div>
+            <div class="card">
+                <h2>Tomorrow</h2>
+                <p>Temp</p>
+                <p>Conditions</p>
+                <img src="#" alt="conditions icon">
+                <p>Humidity</p>
+            </div>
+            <div class="card">
+                <h2>Saturday</h2>
+                <p>Temp</p>
+                <p>Conditions</p>
+                <img src="#" alt="conditions icon">
+                <p>Humidity</p>
+            </div>
+            <div class="card">
+                <h2>Sunday</h2>
+                <p>Temp</p>
+                <p>Conditions</p>
+                <img src="#" alt="conditions icon">
+                <p>Humidity</p>
+            </div>
+        </section>
+        <section id="orders" class="bg-accent">
+            <h1>Thank you for your orders!</h1>
+        </section>
+    </main>
+    <footer class="bg-primary">
+        <img src="./images/logo.webp" alt="logo">
+        <p>Weather from openweathermap.org</p>
+        <a href="#">
+            <img src="./images/fb_logo.webp" alt="fb logo">
+            <img src="./images/ig_logo.webp" alt="ig logo">
+            <img src="./images/x_logo.webp" alt="x logo">
+        </a>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>Email: </p>
+        <p>Phone: </p>
+        <p>Address: </p>
+    </footer>
+</body>
+</html>
