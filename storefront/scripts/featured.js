@@ -7,7 +7,7 @@ document.getElementById('featured-cards').innerHTML = products
             <h2>${product.name}</h2>
             <p>${product.description}</p>
             <img src="${product.image}" alt="${product.name}" loading="lazy">
-            <p>$${product.price}</p>
+            <p>$${(product.price).toFixed(2)}</p>
             <a href="./products.html" class="link">View Products</a>
         </div>`
         ).join("");
