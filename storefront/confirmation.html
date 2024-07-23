@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/hamburger.js" defer></script>
     <script src="./scripts/footer.js" defer></script>
-    <script type="module" src="./scripts/products.js"></script>
-    <title>Just Burgers and Fries | Welcome!</title>
+    <script src="./scripts/confirmation.js" defer></script>
+    <title>Just Burgers and Fries | Order Confirmation!</title>
 </head>
 <body>
     <header class="bg-secondary hstack">
@@ -31,17 +31,19 @@
         </nav>
         <button id="menu-button"></button>
     </header>
-    <main id="products-page" class="bg-secondary">
-        <h1>Products</h1>
-        <div id="product-cards">
-            <div class="card bg-accent">
-                <h2>Burger</h2>
-                <p>Description</p>
-                <img src="url" alt="Burger">
-                <p>$4.50</p>
-                <a href="./order.html?product=1" class="link">Order Now!</a>
+    <main class="bg-secondary">
+        <h1>Thank You For Your Order!</h1>
+        <section id="confirmation-info">
+            <div id="product-card" class="card bg-accent">
+                <h2>Your Order: </h2>
             </div>
-        </div>
+            <div id="message" class="card bg-primary">
+                <h2>Your order will be ready on <span id="arrive-date"></span></h2>
+                <p>Payment will be due on delivery.</p>
+                <p>Contact us at 555-555-5555 in the case of any problems.</p>
+                <p>Please review us on social media!</p>
+            </div>
+        </section>
     </main>
     <footer class="bg-primary">
         <div class="hstack">

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/hamburger.js" defer></script>
     <script src="./scripts/footer.js" defer></script>
-    <script type="module" src="./scripts/products.js"></script>
+    <script type="module" src="./scripts/order.js"></script>
     <title>Just Burgers and Fries | Welcome!</title>
 </head>
 <body>
@@ -31,17 +31,52 @@
         </nav>
         <button id="menu-button"></button>
     </header>
-    <main id="products-page" class="bg-secondary">
-        <h1>Products</h1>
-        <div id="product-cards">
-            <div class="card bg-accent">
-                <h2>Burger</h2>
-                <p>Description</p>
-                <img src="url" alt="Burger">
-                <p>$4.50</p>
-                <a href="./order.html?product=1" class="link">Order Now!</a>
-            </div>
-        </div>
+    <main id="order-page" class="bg-secondary">
+        <section id="selected-card">
+        </section>
+        <section id="form" class="card bg-accent">
+            <h2>Order Here</h2>
+            <form action="confirmation.html" method="get">
+                <label>
+                    First Name: <sup class="red">*</sup>
+                    <input type="text" id="firstname" name="firstname" required autofocus>
+                </label>
+                <label>
+                    Last Name: <sup class="red">*</sup>
+                    <input type="text" id="lastname" name="lastname" required>
+                </label>
+                <label>
+                    Email: <sup class="red">*</sup>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </label>
+                <label>
+                    Phone Number: <sup class="red">*</sup>
+                    <input type="tel" name="phonenumber" id="phonenumber" required>
+                </label>
+                <label>
+                    Street Address: <sup class="red">*</sup>
+                    <input type="text" name="streetAddress" id="streetAddress" required>
+                </label>
+                <label>
+                    City: <sup class="red">*</sup>
+                    <input type="text" name="city" id="city" required>
+                </label>
+                <label>
+                    State: <sup class="red">*</sup>
+                    <input type="text" name="state" id="state" required maxlength="2" minlength="2">
+                </label>
+                <label>
+                    Zip Code: <sup class="red">*</sup>
+                    <input type="text" name="zip" id="zip" required pattern="\d{5}">
+                </label>
+                <label>
+                    Gift Message:
+                    <textarea name="giftMessage" id="giftMessage" rows="4" cols="40"></textarea>
+                </label>
+                <input type="hidden" name="sku" id="sku">
+                <button type="submit">Order</button>
+            </form>
+        </section>
     </main>
     <footer class="bg-primary">
         <div class="hstack">

@@ -16,91 +16,86 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/footer.js" defer></script>
+    <script src="./scripts/order-tracker.js" defer></script>
+    <script type="module" src="./scripts/featured.js"></script>
+    <script type="module" src="./scripts/weather.js"></script>
     <title>Just Burgers and Fries | Welcome!</title>
 </head>
 <body>
     <header class="bg-secondary hstack">
         <img src="./images/logo.webp" alt="logo">
         <nav>
-            <a href="./index.html">Home</a>
-            <a href="./products.html">Products</a>
-            <a href="./about.html">About Us</a>
+            <a href="./index.html" class="link active">Home</a>
+            <a href="./products.html" class="link">Products</a>
+            <a href="./about.html" class="link">About Us</a>
         </nav>
+        <button id="menu-button" aria-label="menu button"></button>
     </header>
     <main>
         <section id="hero">
-            <h1>Just Burgers and Fries</h1>
-            <h4>The World's First Online-Only Drive-Thru!</h4>
+            <div id="hero-box">
+                <h1>Just Burgers and Fries</h1>
+                <h4>The World's First Online-Only Drive-Thru!</h4>
+                <a href="./products.html" class="link">Order Now!</a>
+            </div>
             <picture>
                 <source media="(min-width:1000px)" srcset="./images/hero-large.webp"/>
                 <source media="(min-width:600px)" srcset="./images/hero-medium.webp"/>
                 <img alt="hero image" src="./images/hero-small.webp">
             </picture>
-            <a href="./products.html">Order Now!</a>
         </section>
         <section id="featured" class="bg-primary">
-            <div class="card">
-                <h2>Product 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
-                <img src="#" alt="Product1 Image">
-            </div>
-            <div class="card">
-                <h2>Product 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
-                <img src="#" alt="Product2 Image">
-            </div>
-            <div class="card">
-                <h2>Product 3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
-                <img src="#" alt="Product3 Image">
+            <h2>Featured Menu Items</h2>
+            <div id="featured-cards" class="lg-hstack">
+                <div class="card bg-accent">
+                    <h2>Product 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
+                    <img src="#" alt="Product1 Image">
+                </div>
+                <div class="card bg-accent">
+                    <h2>Product 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
+                    <img src="#" alt="Product2 Image">
+                </div>
+                <div class="card bg-accent">
+                    <h2>Product 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis velit enim laudantium ea iure tenetur debitis, hic quibusdam perferendis architecto alias quaerat dolorem quis sunt, ratione consequatur asperiores. Alias!</p>
+                    <img src="#" alt="Product3 Image">
+                </div>
             </div>
         </section>
         <section id="weather" class="bg-secondary">
-            <div class="card">
-                <h2>Today</h2>
-                <p>Temp</p>
-                <p>Conditions</p>
-                <img src="#" alt="conditions icon">
-                <p>Humidity</p>
-            </div>
-            <div class="card">
-                <h2>Tomorrow</h2>
-                <p>Temp</p>
-                <p>Conditions</p>
-                <img src="#" alt="conditions icon">
-                <p>Humidity</p>
-            </div>
-            <div class="card">
-                <h2>Saturday</h2>
-                <p>Temp</p>
-                <p>Conditions</p>
-                <img src="#" alt="conditions icon">
-                <p>Humidity</p>
-            </div>
-            <div class="card">
-                <h2>Sunday</h2>
-                <p>Temp</p>
-                <p>Conditions</p>
-                <img src="#" alt="conditions icon">
-                <p>Humidity</p>
+            <h2>Weather in Salt Lake</h2>
+            <div id="weather-cards" class="lg-hstack">
+
             </div>
         </section>
         <section id="orders" class="bg-accent">
-            <h1>Thank you for your orders!</h1>
+            <h1>Thank you for your <span id="num-orders"></span> orders with us!</h1>
         </section>
     </main>
     <footer class="bg-primary">
-        <img src="./images/logo.webp" alt="logo">
-        <p>Weather from openweathermap.org</p>
+        <div class="hstack">
+            <img src="./images/logo.webp" alt="logo">
+            <div>
+                <p>Weather from openweathermap.org</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p>Email: justBurgersAndFries@gmail.com</p>
+                <p>Phone: 555-555-5555</p>
+                <p>Address: 555 Fake Street, Salt Lake City, UT</p>
+            </div>
+        </div>
         <a href="#">
             <img src="./images/fb_logo.webp" alt="fb logo">
-            <img src="./images/ig_logo.webp" alt="ig logo">
-            <img src="./images/x_logo.webp" alt="x logo">
         </a>
-        <p>Last Modified: <span id="last-modified"></span></p>
-        <p>Email: </p>
-        <p>Phone: </p>
-        <p>Address: </p>
+        <a href="#">
+            <img src="./images/ig_logo.webp" alt="ig logo">
+        </a>
+        <a href="#">
+            <img src="./images/x_logo.webp" alt="ig logo">
+        </a>
     </footer>
 </body>
 </html>

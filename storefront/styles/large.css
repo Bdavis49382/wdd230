@@ -1,0 +1,35 @@
+@media screen and (min-width: 1000px)  {
+    .lg-hstack {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #featured-cards .card {
+        width: 20rem;
+    }
+
+    #weather-cards .card {
+        width: 15rem;
+    }
+
+    #about-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #confirmation-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #message {
+        justify-content: start;
+    }
+
+    #about-page .card {
+        justify-content: start;
+        width: 90%;
+    }
+
+}

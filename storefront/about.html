@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ben Davis">
+    <meta name="description" content="Spring 2024 - WDD 230 - Final Project">
+
+    <meta property="og:title" content="Just Burgers and Fries | Official Website" >
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bdavis49382.github.io/wdd230/storefront/images/log.webp" >
+    <meta property="og:url" content="https://bdavis49382.github.io/wdd230/storefront" >
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/footer.js" defer></script>
+    <title>Just Burgers and Fries | Welcome!</title>
+</head>
+<body>
+    <header class="bg-secondary hstack">
+        <img src="./images/logo.webp" alt="logo">
+        <nav>
+            <a href="./index.html" class="link">Home</a>
+            <a href="./products.html" class="link">Products</a>
+            <a href="./about.html" class="link active">About Us</a>
+        </nav>
+        <button id="menu-button"></button>
+    </header>
+    <main id="about-page" class="bg-secondary">
+        <section class="card bg-primary">
+            <h2>
+                History
+            </h2>
+            <p>Just Burgers and Fries was founded on the belief that hamburgers and fries are two very beautiful things, especially together. Everything else on the menu
+                of a fast food joint is really just a waste of space. Along with streamlining the menu, our fearless creators streamlined more costs by eliminating any kind
+                of cashier service withn an online only ordering system. Both of these simplifications allow for the amazingly low prices our fans have come to know and love!
+                Just Burgers and Fries has been faithfully serving members of the Salt Lake City community since July of 2024!
+            </p>
+        </section>
+        <section class="card bg-accent" id="about-pictures">
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="./images/employee-large.webp" height="700"/>
+                    <source media="(min-width:600px)" srcset="./images/employee-medium.webp" height="500"/>
+                    <img src="images/employee-small.webp" alt="employee" height="300" loading="lazy">
+                </picture>
+                <figcaption>Our employees are some of the friendliest in the world!</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="./images/app-large.webp" height="700"/>
+                    <source media="(min-width:600px)" srcset="./images/app-medium.webp" height="500"/>
+                    <img src="images/app-small.webp" alt="app" height="300" loading="lazy">
+                </picture>
+                <figcaption>Our app and website make it easier than ever before to get the food you need!</figcaption>
+            </figure>
+        </section>
+        <section>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10163.814329301935!2d-111.90678968817004!3d40.7681810189978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87523d9488d131ed%3A0x5b53b7a0484d31ca!2sSalt%20Lake%20City%2C%20UT!5e0!3m2!1sen!2sus!4v1721767361250!5m2!1sen!2sus"
+                width="400" 
+                height="450" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer class="bg-primary">
+        <div class="hstack">
+            <img src="./images/logo.webp" alt="logo">
+            <div>
+                <p>Weather from openweathermap.org</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p>Email: justBurgersAndFries@gmail.com</p>
+                <p>Phone: 555-555-5555</p>
+                <p>Address: 555 Fake Street, Salt Lake City, UT</p>
+            </div>
+        </div>
+        <a href="#">
+            <img src="./images/fb_logo.webp" alt="fb logo">
+        </a>
+        <a href="#">
+            <img src="./images/ig_logo.webp" alt="ig logo">
+        </a>
+        <a href="#">
+            <img src="./images/x_logo.webp" alt="ig logo">
+        </a>
+    </footer>
+</body>
+</html>

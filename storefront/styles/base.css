@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --primary-background: #ACD9EC;
     --primary-text: black;
@@ -6,6 +8,22 @@
     --accent: #E0B8D3;
     --accent-text: black;
 }
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+p {
+    font-weight: 200;
+}
+
+a {
+    font-weight: 200;
+}
+
+/* General */
 
 .bg-primary {
     background-color: var(--primary-background);
@@ -22,17 +40,216 @@
     color: var(--accent-text);
 }
 
-nav a {
+.link {
     background-color: var(--secondary-text);
     color: white;
+    text-decoration: none;
+    transition: all 1s;
+    opacity: 90%;
+
 }
 
-#hero img {
-    width: 100%;
+.link:hover, .link.active {
+    background-color: var(--accent);
+    color: var(--accent-text);
+    opacity: 100%;
+
 }
 
 .hstack {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.card {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: .1rem .1rem .1rem gray;
+    
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+section {
+    padding: 2rem 0 2rem 0;
+}
+
+/* Home Page */
+
+#hero {
+    position: relative;
+    padding: 0px;
+}
+
+#hero-box {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    margin-left: -30vw;
+    top: 10%;
+    background-color: rgba(255,255,255,.5);
+    padding: .5rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 60vw;
+    font-size: 1rem;
+}
+
+#hero-box .link {
+    padding:.2rem;
+}
+
+#hero img {
+    width: 100%;
+    opacity: 40%;
+    filter: blur(2px);
+}
+
+
+nav {
+    display: none;
+}
+
+#hero-box h4 {
+    display: none;
+}
+
+/* Hamburger Menu */
+
+#menu-button {
+    display: block;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+#menu-button::before {
+    content: "≡";
+}
+
+#menu-button.open::before {
+    content: "X";
+}
+
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav.open a {
+    margin-bottom: 1px;
+    font-size: 1.5rem;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+}
+
+footer .hstack {
+    justify-content: center;
+}
+
+footer a img {
+    margin: 1rem;
+    width: 40px;
+}
+
+/* Weather */
+
+#weather-cards .card {
+    text-align: center;
+}
+
+
+/* Products */
+
+h1 {
+    margin-top: 0px;
+}
+
+#product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#product-cards img {
+    width: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card a {
+    padding: 1rem;
+}
+
+
+/* Orders */
+
+#form {
+    justify-content: start;
+    align-items: start;
+}
+
+.red {
+    color: red;
+    font-size: 1rem;
+}
+
+label {
+    display: block;
+    padding: .4rem;
+}
+
+input, textarea {
+    display: block;
+}
+
+input:valid {
+    background-color: lightgreen;
+}
+
+input:invalid {
+    background-color: lightcoral;
+}
+
+table {
+    border-spacing: .1rem;
+}
+
+th, td {
+    padding: .2rem;
+    text-align: left;
+}
+
+#total td, #total th{
+    border-top: 1px solid black;
+}
+
+/* Order Confirmation */
+
+#product-card {
+    padding-left: 1rem;
+    align-items: start;
+}
+
+/* About Us */
+
+#about-page p {
+    font-size: 1.5rem;
 }

@@ -1,0 +1,98 @@
+[
+    {
+        "sku":1,
+        "name":"Classic Burger and Fries",
+        "description": "Our most famous burger with a delicious patty topped with crispy fries! Our two favorite things all in one!",
+        "image": "./images/Classic-Burger-and-Fries.webp",
+        "price": 4.50,
+        "featured": true
+    },
+    {
+        "sku":2,
+        "name":"Just-A-Burger",
+        "description": "A simple, juicy, cheeseburger, without any extra frills, just the standard fare!",
+        "image": "./images/Just-A-Burger.webp",
+        "price": 3.00,
+        "featured": false
+    },
+    {
+        "sku":7,
+        "name":"Ultimate Just-A-Burger",
+        "description": "For those kids out there that just like the burger in the burger, this burger has no toppings. Not even cheese! Ask for some ketchup packets if you'd like some flavor.",
+        "image": "./images/Ultimate-Burger.webp",
+        "price": 2.50,
+        "featured": false
+    },
+    {
+        "sku":8,
+        "name":"Everything-On-It Burger",
+        "description": "When the basics aren't enough, take it up a notch with this burger. Includes bacon and avocado!",
+        "image": "./images/Everything-Burger.webp",
+        "price": 5.50,
+        "featured": false
+    },
+    {
+        "sku":9,
+        "name":"The No-Bun Just-A-Burger",
+        "description": "For our gluten free fans out there, the classic Just-A-Burger, with a lettuce wrap instead of a bun!",
+        "image": "./images/No-Bun-Burger.webp",
+        "price": 4.50,
+        "featured": false
+    },
+    {
+        "sku":3,
+        "name":"Just-Some-Fries",
+        "description": "A pile of steaming hot salty fries, straight from the frier! Goes great with Just-A-Burger!",
+        "image": "./images/Just-Some-Fries.webp",
+        "price": 2.50,
+        "featured": false
+    },
+    {
+        "sku":4,
+        "name":"Cajun Fries",
+        "description": "Want Just-Some-Fries but need a little spice? Experience the heat of the south with these fries!",
+        "image": "./images/Cajun-Fries.webp",
+        "price": 3.00,
+        "featured": false
+    },
+    {
+        "sku":10,
+        "name":"Nacho Fries",
+        "description": "Bring the mexican flavor into your meal with some nacho-cheese drenched fries!",
+        "image": "./images/Nacho-Fries.webp",
+        "price": 4.00,
+        "featured": false
+    },
+    {
+        "sku":11,
+        "name":"Loaded Fries",
+        "description": "Covered in cheese, ground beef and ketchup, we don't blame you if these replace a burger as your entree!",
+        "image": "./images/Loaded-Fries.webp",
+        "price": 4.50,
+        "featured": true
+    },
+    {
+        "sku":5,
+        "name":"Cinnamon Dessert Fries",
+        "description": "Covered in cinnamon sugar, these fries are a great end to a fantastic meal!",
+        "image": "./images/Cinnamon-Fries.webp",
+        "price": 3.00,
+        "featured": false
+    },
+    {
+        "sku":6,
+        "name":"Powdered Sugar Dessert Fries",
+        "description": "Covered in powdered sugar, these fries are a great end to a fantastic meal!",
+        "image": "./images/Sugar-Fries.webp",
+        "price": 3.50,
+        "featured": false
+    },
+    {
+        "sku":12,
+        "name":"Variety Deal",
+        "description": "Get some of our best products together for an amazing deal! The variety deal contains a Just-A-Burger, Just-Some-Fries, Classic Burger and Fries, Loaded Fries, and Cinnamon Dessert Fries!",
+        "image": "./images/Deal.webp",
+        "price": 12.00,
+        "featured": true
+    }
+]
